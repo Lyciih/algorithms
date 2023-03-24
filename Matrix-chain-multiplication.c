@@ -1,4 +1,5 @@
-#include "algorithms.h"
+#include "stdio.h"
+#include "string.h"
 
 
 int cut(int first,int end, void * cut_table, int n_size)
