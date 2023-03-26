@@ -110,7 +110,7 @@ int main()
 
 
 	//印出整個table
-	/*
+	
 	for(int i = 0; i <= matrix_number; i++)
 	{
 		for(int j = 0; j <= matrix_number; j++)
@@ -120,10 +120,10 @@ int main()
 		printf("\n");
 	}
 	printf("-------------------\n");
-	*/
+	
 
 	//印出整個table
-	/*
+	
 	for(int i = 0; i <= matrix_number; i++)
 	{
 		for(int j = 0; j <= matrix_number; j++)
@@ -132,7 +132,7 @@ int main()
 		}
 		printf("\n");
 	}
-	*/
+	
 
 	printf("%d\n", count_table[search_first][search_end]);
 	cut(search_first, search_end, cut_table, matrix_number + 1);
