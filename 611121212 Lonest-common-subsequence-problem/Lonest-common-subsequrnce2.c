@@ -7,16 +7,14 @@
 int main()
 {
 	int first_length = 0;
-	while(scanf("%d", &first_length) != EOF)
-	{
-
 	int second_length = 0;
-	scanf("%d", &second_length);
-
-
 	char first[256];
-	scanf("%s", first);
 	char second[256];
+	
+
+	scanf("%d", &first_length);
+	scanf("%d", &second_length);
+	scanf("%s", first);
 	scanf("%s", second);
 
 	int count_table[first_length + 2][second_length + 2];
@@ -82,7 +80,7 @@ int main()
 		}
 	}
 	printf("\n");
-	}
+	
 	return 0;
 
 }
