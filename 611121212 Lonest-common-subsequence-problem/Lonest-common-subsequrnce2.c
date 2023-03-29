@@ -14,9 +14,9 @@ int main()
 	scanf("%d", &second_length);
 
 
-	char first[50];
+	char first[256];
 	scanf("%s", first);
-	char second[50];
+	char second[256];
 	scanf("%s", second);
 
 	int count_table[first_length + 2][second_length + 2];
@@ -83,106 +83,6 @@ int main()
 	}
 	printf("\n");
 
-
-
-
-
-
-
-
-/*
-	//print count_table
-	for(int i = 0; i < first_length + 2; i++)
-	{
-		for(int j = 0; j < second_length + 2; j++)
-		{
-			if(i == 0)
-			{
-				if(j > 1)
-				{
-					printf("%c  ",*(second + j - 2));
-				}
-				else
-				{
-					printf("   ");
-				}
-			}
-			else if(j == 0)
-			{
-				if(i > 1)
-				{
-					printf("%c  ",*(first + i - 2));
-				}
-				else
-				{
-					printf("   ");
-				}
-			}
-			else
-			{
-				printf("%d  ", hit_table[i][j]);
-
-			}
-		}
-		printf("\n");
-	}
-
-
-
-	printf("\n\n");
-
-
-	//print hit_table
-	for(int i = 0; i < first_length + 2; i++)
-	{
-		for(int j = 0; j < second_length + 2; j++)
-		{
-			if(i == 0)
-			{
-				if(j > 1)
-				{
-					printf("%c  ",*(second + j - 2));
-				}
-				else
-				{
-					printf("   ");
-				}
-			}
-			else if(j == 0)
-			{
-				if(i > 1)
-				{
-					printf("%c  ",*(first + i - 2));
-				}
-				else
-				{
-					printf("   ");
-				}
-			}
-			else
-			{
-				if(hit_table[i][j] == 1)
-				{
-					printf("|  ");
-				}
-				else if(hit_table[i][j] == 2)
-				{
-					printf("\\  ");
-				}
-				else if(hit_table[i][j] == 3)
-				{
-					printf("-  ");
-				}
-				else
-				{
-					printf("0  ");
-				}
-
-			}
-		}
-		printf("\n");
-	}
-*/
 	return 0;
 
 }
