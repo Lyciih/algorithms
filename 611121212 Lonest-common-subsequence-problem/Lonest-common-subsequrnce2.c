@@ -6,9 +6,9 @@
 
 int main()
 {
-	
 	int first_length = 0;
-	scanf("%d", &first_length);
+	while(scanf("%d", &first_length) != EOF)
+	{
 
 	int second_length = 0;
 	scanf("%d", &second_length);
@@ -82,7 +82,7 @@ int main()
 		}
 	}
 	printf("\n");
-
+	}
 	return 0;
 
 }
