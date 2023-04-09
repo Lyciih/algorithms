@@ -1,8 +1,4 @@
 #include <stdio.h>
-#include <string.h>
-
-
-
 
 int main()
 {
@@ -10,7 +6,6 @@ int main()
 	scanf("%d", &array_number);		//輸入要處理的陣列長度
 
 	int array[array_number];		//建立存放資料的陣列
-	memset(array, 0, sizeof(array));
 
 	for(int i = 0; i < array_number; i++)
 	{
