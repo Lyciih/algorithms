@@ -40,10 +40,6 @@ int main()
 		spinklers[i].r = (double)center_i + range;
 	}
 
-	for(int i = 0; i < n; i++)
-	{
-		printf("%d %f %f\n", spinklers[i].center, spinklers[i].l, spinklers[i].r);
-	}	
 
 	double position = 0;
 	double next_step = 0;
@@ -82,12 +78,7 @@ int main()
 			break;
 		}
 	}
-
-	for(int i = 0; i < n; i++)
-	{
-		printf("%d ", spinklers[i].select);
-	}
-	printf("\n%f\n", next_step);
+	
 	if(next_step >= l)
 	{
 		int count = 0;

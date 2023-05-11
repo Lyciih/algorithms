@@ -1,5 +1,5 @@
 all:
-	gcc table.c -lm
+	gcc final.c -lm
 
 .PHONY: run clean
 
